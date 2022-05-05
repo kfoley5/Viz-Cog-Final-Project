@@ -1,0 +1,76 @@
+html body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(251, 233, 201);
+}
+
+h1 {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 70px;
+    margin-bottom: 50px;
+    margin-top: -5px;
+}
+
+p {
+    margin-top: 2em;
+    font-size: 15px;
+}
+
+.introContainer {
+    display: grid;
+    grid-template-columns: 48vw 40vw;
+    grid-template-rows: 100vh;
+    grid-template-areas: "intro dataViz"
+}
+
+#intro {
+    grid-area: intro;
+    margin-left: 20px;
+}
+
+#dataViz {
+    grid-area: dataViz;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#spacer {
+    height: 50px;
+    width: 100vw;
+}
+
+#chart {
+    width: 100vw;
+    height: 100vh; 
+    margin-right: -500px;
+}
+
+button {
+    background: none;
+    font-size: 15px;
+    border: none;
+}
+
+button:hover,button:focus {
+    color: teal;
+}
+
+#buttondiv {
+    width: 100vw;
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+#wheel {
+    transform-origin: center center;
+    transform: rotate(0);
+    transition: 1.5s;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px;
+}
